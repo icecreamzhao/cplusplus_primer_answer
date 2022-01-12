@@ -2,6 +2,8 @@
 #define SALES_DATA
 #include <iostream>
 
+using std::string;
+
 struct Sales_data
 {
 	string isbn = "";

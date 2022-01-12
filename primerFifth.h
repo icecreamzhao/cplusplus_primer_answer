@@ -5,5 +5,6 @@
 
 #include "chapter1/Chapter_1.h"
 #include "chapter2/Chapter_2.h"
+#include "chapter3/Chapter_3.h"
 
 // TODO: 在此处引用程序需要的其他标头。
