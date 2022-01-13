@@ -22,7 +22,7 @@ using std::strlen;
 * 编写程序, 一次读取一整行 *
 * 编写程序, 一次读取一个词 *
 *************************/
-void Chapter_three::practiceThreeOTwo()
+void Chapter_three::p_3p2p2_3p2()
 {
 	string line;
 	if (getline(cin, line))
@@ -39,7 +39,7 @@ void Chapter_three::practiceThreeOTwo()
 /***************************************************************
 * 输入两个字符串, 比较长度是否相等, 如果相等, 则输出长度较大的字符串 *
 ***************************************************************/
-void Chapter_three::practiceThreeOFour()
+void Chapter_three::p_3p2p2_3p4()
 {
 	string s1, s2;
 	cin >> s1 >> s2;
@@ -57,7 +57,7 @@ void Chapter_three::practiceThreeOFour()
 * 从输入中读取一组字符串, 并合并成一个大的字符串;	*
 * 从输入中读取一组字符串, 合并成字符串并使用空格分割 *
 ************************************************/
-void Chapter_three::practiceThreeOFive()
+void Chapter_three::p_3p2p2_3p5()
 {
 	string s1, s2 = "";
 	while (cin >> s1)
@@ -150,7 +150,7 @@ void Chapter_three::toHex()
 /***************************************
 * 使用范围for语句将字符串所有字符使用X代替 *
 ***************************************/
-void Chapter_three::practiceThreeOSix()
+void Chapter_three::p_3p2p3_3p6()
 {
 	string s = "hello, world";
 	for (auto &c : s)
@@ -163,7 +163,7 @@ void Chapter_three::practiceThreeOSix()
 /*********************************
 * 使用传统for和while修改上面的练习 *
 *********************************/
-void Chapter_three::practiceThreeOEight()
+void Chapter_three::p_3p2p3_3p8()
 {
 	// while
 	string s = "hello, world";
@@ -190,7 +190,7 @@ void Chapter_three::practiceThreeOEight()
 /*****************************
 * 读取一组整数, 并添加进vector *
 *****************************/
-void Chapter_three::practiceThreeOFourteen()
+void Chapter_three::p_3p2p2_3p14()
 {
 	vector<int> inputs;
 	int input = 0;
@@ -205,7 +205,7 @@ void Chapter_three::practiceThreeOFourteen()
 /************************
 * 将上面的练习改成string *
 ************************/
-void Chapter_three::practiceThreeOFifteen()
+void Chapter_three::p_3p2p2_3p15()
 {
 	vector<string> inputs;
 	string s = "";
@@ -238,7 +238,7 @@ void Chapter_three::vectorIndex()
 /***********************************************************
 * 从cin读入一组词存入vector, 然后改为大写, 最后输出, 每词占一行 *
 ***********************************************************/
-void Chapter_three::practiceThreeOSeventeen()
+void Chapter_three::p_3p2p3_3p17()
 {
 	vector<string> strings;
 	string input;
@@ -264,7 +264,7 @@ void Chapter_three::practiceThreeOSeventeen()
 /*********************************************
 * 使用三种方式初始化有10个int值的vector, 值为42 *
 *********************************************/
-void Chapter_three::practiceThreeONineTeen()
+void Chapter_three::p_3p2p3_3p19()
 {
 	vector<int> v1(10, 42);
 	vector<int> v2 = { 42, 42, 42, 42, 42, 42, 42, 42, 42, 42 };
@@ -275,7 +275,7 @@ void Chapter_three::practiceThreeONineTeen()
 * 输入一组整数, 存入vector中, 将每对相邻整数的和输出 *
 * 将第一个和最后一个整数的和输出, 以此类推			 *
 *************************************************/
-void Chapter_three::practiceThreeOTwenty()
+void Chapter_three::p_3p2p3_3p20()
 {
 	vector<int> result;
 	int input;
@@ -331,7 +331,7 @@ void Chapter_three::useVectorIterator()
 /***********************
 * 修改字符串第一段为大写 *
 ***********************/
-void Chapter_three::practiceThreeOTwentyTwo()
+void Chapter_three::p_3p4p1_3p22()
 {
 	string text = "some thing";
 	bool haveSpace = false;
@@ -349,7 +349,7 @@ void Chapter_three::practiceThreeOTwentyTwo()
 /********************************************************
 * 创建含有10个元素的vector对象, 使用迭代器将原来的值变为两倍 *
 ********************************************************/
-void Chapter_three::practiceThreeOTwentyThree()
+void Chapter_three::p_3p4p1_3p23()
 {
 	vector<int> v1(10, 2);
 	for (auto it = v1.begin(); it != v1.end(); ++it)
@@ -408,7 +408,7 @@ void Chapter_three::search()
 /********************************
 * practiceThreeOTwenty迭代器版本 *
 ********************************/
-void Chapter_three::practiceThreeOTwentyFour()
+void Chapter_three::p_3p4p2_3p24()
 {
 	// 输出相邻的数的和
 	vector<int> target;
@@ -439,7 +439,7 @@ void Chapter_three::practiceThreeOTwentyFour()
 /***********************
 * 使用下标实现划分分数段 *
 ***********************/
-void Chapter_three::practiceThreeOTwentyFive()
+void Chapter_three::p_3p4p2_3p25()
 {
 	vector<int> score(11, 0);
 	int input;
@@ -465,7 +465,7 @@ void Chapter_three::practiceThreeOTwentyFive()
 /*************************************
 * 定义一个数组, 令每个元素的值就是其下标 *
 *************************************/
-int* Chapter_three::practiceThreeOThrityOne()
+int* Chapter_three::p_3p5p2_3p31()
 {
 	constexpr size_t array_size = 10;
 	int *iarray = new int[array_size];
@@ -481,10 +481,10 @@ int* Chapter_three::practiceThreeOThrityOne()
 /*************************************************
 * 将上一题的数组复制到另一个数组中, 并使用vector重写 *
 *************************************************/
-void Chapter_three::practiceThreeOThrityTwo()
+void Chapter_three::p_3p5p2_3p32()
 {
 	constexpr size_t array_size = 10;
-	int* p = practiceThreeOThrityOne();
+	int* p = p_3p5p2_3p31();
 	int iarray[array_size];
 
 	for (int i = 0; i != array_size; ++i)
@@ -510,7 +510,7 @@ void Chapter_three::practiceThreeOThrityTwo()
 /***************************
 * 利用指针将数组中的元素置为0 *
 ***************************/
-void Chapter_three::practiceThreeOThrityFive()
+void Chapter_three::p_3p5p3_3p35()
 {
 	int ia[] = { 1,2,3,4,5 };
 	int* be = begin(ia);
@@ -530,7 +530,7 @@ void Chapter_three::practiceThreeOThrityFive()
 /*************************
 * 比较数组和vector是否相同 *
 *************************/
-void Chapter_three::practiceThreeOThritySix()
+void Chapter_three::p_3p5p3_3p36()
 {
 	int ia[] = { 1,2,3,4,5 };
 	int ia2[] = { 1,2,3,4,5 };
@@ -575,7 +575,7 @@ void Chapter_three::practiceThreeOThritySix()
 /*****************************
 * 比较C风格字符串和标准库字符串 *
 *****************************/
-void Chapter_three::practiceThreeOThrityNine()
+void Chapter_three::p_3p5p4_3p39()
 {
 	string s1 = "abc";
 	string s2 = "def";
@@ -604,7 +604,7 @@ void Chapter_three::practiceThreeOThrityNine()
 /****************************************************
 * 使用strcpy和strcat把前两个数组的内容拷贝到第三个数组中 *
 *****************************************************/
-void Chapter_three::practiceThreeOFourty()
+void Chapter_three::p_3p5p4_3p40()
 {
 	// 这里一定要指定ca1的长度, 要不然strcat之后ca1就不够用了
 	char ca1[8] = { 'a', 'b', 'c', '\0' };
@@ -648,7 +648,7 @@ void Chapter_three::cCodeTest()
 /***********************
 * 用整型数组初始化vector *
 ***********************/
-void Chapter_three::practiceThreeOFourtyOne()
+void Chapter_three::p_3p5p5_3p41()
 {
 	int int_arr[] = { 1,2,3,4,5 };
 	vector<int> vec_int(int_arr + 1, int_arr + 4); // 2, 3, 4
@@ -661,7 +661,7 @@ void Chapter_three::practiceThreeOFourtyOne()
 /*************************
 * vector拷贝数据给整型数组 *
 *************************/
-void Chapter_three::practiceThreeOFourtyTwo()
+void Chapter_three::p_3p5p5_3p42()
 {
 	vector<int> vec_int(10, 2);
 	int int_arr[10];
@@ -743,7 +743,7 @@ void Chapter_three::multiArrayAndPoint()
 	cout << endl;
 }
 
-void Chapter_three::practiceThreeOFourtyThree()
+void Chapter_three::p_3p5p6_3p43()
 {
 	constexpr size_t one_size = 3;
 	constexpr size_t two_size = 4;
@@ -779,35 +779,36 @@ using int_array = int(&)[4];
 **************/
 void Chapter_three::runAll()
 {
-	/*practiceThreeOTwo();
-	practiceThreeOFour();
-	practiceThreeOFive();
+	/*p_3p2p2_3p2();
+	p_3p2p2_3p4();
+	p_3p2p2_3p5();
 	countPunct();
 	myToUpperCase();
 	useIndex();
 	toHex();
-	practiceThreeOSix();
-	practiceThreeOEight();
-	practiceThreeOFourteen();
+	p_3p2p3_3p6();
+	p_3p2p3_3p8();
+	p_3p2p2_3p14();
 	vectorIndex();
-	practiceThreeOSeventeen();
-	practiceThreeOTwenty();
+	p_3p2p3_3p17();
+	p_3p2p3_3p19();
+	p_3p2p3_3p20();
 	useVectorIterator();
-	practiceThreeOTwentyTwo();
-	practiceThreeOTwentyThree();
+	p_3p4p1_3p22();
+	p_3p4p1_3p23();
 	search();
-	practiceThreeOTwentyFour();
-	practiceThreeOTwentyFive();
-	practiceThreeOThrityOne();
-	practiceThreeOThrityTwo();
-	practiceThreeOThrityFive();
-	practiceThreeOThritySix();
-	practiceThreeOThrityNine();
-	practiceThreeOFourty();
+	p_3p4p2_3p24();
+	p_3p4p2_3p25();
+	p_3p5p2_3p31();
+	p_3p5p2_3p32();
+	p_3p5p3_3p35();
+	p_3p5p3_3p36();
+	p_3p5p4_3p39();
+	p_3p5p4_3p40();
 	cCodeTest();
-	practiceThreeOFourtyOne();
-	practiceThreeOFourtyTwo();
+	p_3p5p5_3p41();
+	p_3p5p5_3p42();
 	multiArray();
 	multiArrayAndPoint();*/
-	practiceThreeOFourtyThree();
+	p_3p5p6_3p43();
 }

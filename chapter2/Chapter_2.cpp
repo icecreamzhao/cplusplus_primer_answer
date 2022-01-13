@@ -10,7 +10,7 @@ using std::cerr;
 /*******************
 * 写出下列式子的结果 *
 *******************/
-void Chapter_two::practiceTwoOThree()
+void Chapter_two::p_2p1p2_2p3()
 {
 	unsigned u = 10, u2 = 42;
 	cout << u2 - u << endl; // 32
@@ -26,7 +26,7 @@ void Chapter_two::practiceTwoOThree()
 /**************
 * 使用转义序列 *
 **************/
-void Chapter_two::practiceTwoOSeven()
+void Chapter_two::p_2p1p3_2p8()
 {
 	cout << "2M\n" << endl;
 	cout << "2\tM\n" << endl;
@@ -35,7 +35,7 @@ void Chapter_two::practiceTwoOSeven()
 /*****************************************
 * 下列赋值都是合法的, 但是会有信息丢失的风险 *
 *****************************************/
-void Chapter_two::practiceTwoOSixteen()
+void Chapter_two::p_2p3p1_2p16()
 {
 	int i = 0, & r1 = i;
 	double d = 3.14, & r2 = d;
@@ -49,7 +49,7 @@ void Chapter_two::practiceTwoOSixteen()
 /*****************************************
 * 编写程序, 修改指针的值以及指针所指对象的值 *
 *****************************************/
-void Chapter_two::practiceTwoOEighteen()
+void Chapter_two::p_2p3p2_2p18()
 {
 	int val = 1, * p = &val;
 	int val2 = 2;
@@ -119,9 +119,9 @@ void Chapter_two::calculateSalesData()
 }
 
 /****************************************
-* 使用sales_data完成1.20, 1.21, 1.22练习 *
+* 使用sales_data完成1.5.1, 1.5.2, 1.6节练习 *
 ****************************************/
-void Chapter_two::practiceTwoOFourtyOne()
+void Chapter_two::p_2p6p2_2p41()
 {
 	// 读取一组销售记录, 并把每一条打印在标准输出上
 	Sales_data data;
@@ -233,12 +233,12 @@ void Chapter_two::practiceTwoOFourtyOne()
 // 运行练习
 void Chapter_two::runAll()
 {
-	/*practiceTwoOThree();
-	practiceTwoOSeven();
-	practiceTwoOSixteen();
-	practiceTwoOEighteen();
+	p_2p1p2_2p3();
+	p_2p1p3_2p8();
+	p_2p3p1_2p16();
+	p_2p3p2_2p18();
 	constReference();
 	constPointer();
 	calculateSalesData();
-	practiceTwoOFourtyOne();*/
+	p_2p6p2_2p41();
 }
