@@ -14,7 +14,6 @@ struct Chapter_three
 	void multiArray();
 	void multiArrayAndPoint();
 
-	// ¿ÎºóÁ·Ï°
 	void p_3p2p2_3p2();
 	void p_3p2p2_3p4();
 	void p_3p2p2_3p5();

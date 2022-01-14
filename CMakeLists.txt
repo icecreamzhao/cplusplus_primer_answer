@@ -8,16 +8,17 @@ project ("primerFifth")
 # 将源代码添加到此项目的可执行文件。
 add_executable (
 primerFifth 
-"primerFifth.cpp" 
-"primerFifth.h" 
-"chapter1/chapter_1.h" 
-"chapter1/Chapter_1.cpp" 
-"chapter1/sales_item.h" 
-"chapter2/Chapter_2.h" 
-"chapter2/Chapter_2.cpp" 
-"chapter2/Sales_data.h" 
-"chapter3/Chapter_3.h" 
-"chapter3/Chapter_3.cpp"
-)
+ "primerFifth.cpp" 
+ "primerFifth.h" 
+ "chapter1/chapter_1.h" 
+ "chapter1/Chapter_1.cpp" 
+ "chapter1/sales_item.h" 
+ "chapter2/Chapter_2.h" 
+ "chapter2/Chapter_2.cpp" 
+ "chapter2/Sales_data.h" 
+ "chapter3/Chapter_3.h" 
+ "chapter3/Chapter_3.cpp"
+ "chapter4/Chapter_4.cpp"
+ "chapter4/Chapter_4.h")
 
 # TODO: 如有需要，请添加测试并安装目标。

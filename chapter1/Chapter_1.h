@@ -3,10 +3,8 @@
 
 #include <iostream>
 
-class Chapter_one
+struct Chapter_one
 {
-public:
-	// 书中的实例
 	void enterTwoNum();
 	void calculateOneToTen();
 	void cinNumToSum();
@@ -14,7 +12,6 @@ public:
 	void checkSameIsbn();
 	void showTotalSales();
 
-	// 下面是练习题
 	void p_1p2_1p3();
 	void p_1p2_1p4();
 	void p_1p2_1p5();

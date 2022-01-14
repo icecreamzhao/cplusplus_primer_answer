@@ -3,9 +3,8 @@
 
 #include <iostream>
 
-class Chapter_two
+struct Chapter_two
 {
-public:
 	void constReference();
 	void constPointer();
 	void calculateSalesData();

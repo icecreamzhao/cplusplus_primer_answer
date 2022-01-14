@@ -743,6 +743,9 @@ void Chapter_three::multiArrayAndPoint()
 	cout << endl;
 }
 
+/************************************************
+* 使用范围for, 普通for和下标, 普通for和指针遍历数组 *
+************************************************/
 void Chapter_three::p_3p5p6_3p43()
 {
 	constexpr size_t one_size = 3;
