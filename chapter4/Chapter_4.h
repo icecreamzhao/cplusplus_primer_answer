@@ -18,4 +18,4 @@ struct Chapter_four {
 
 	void runAll();
 };
-#endif // !CHAPTER_FOUR
+#endif

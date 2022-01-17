@@ -40,5 +40,4 @@ struct Chapter_three
 
 	void runAll();
 };
-
-#endif // !CHAPTER_THREE
+#endif

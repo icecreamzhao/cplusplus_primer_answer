@@ -19,6 +19,8 @@ primerFifth
  "chapter3/Chapter_3.h" 
  "chapter3/Chapter_3.cpp"
  "chapter4/Chapter_4.cpp"
- "chapter4/Chapter_4.h")
+ "chapter4/Chapter_4.h"
+ "chapter5/Chapter_5.h"
+ "chapter5/Chapter_5.cpp")
 
 # TODO: 如有需要，请添加测试并安装目标。

@@ -26,5 +26,4 @@ struct Chapter_one
 
 	void runAll();
 };
-
-#endif // !CHAPTER_ONE
+#endif
