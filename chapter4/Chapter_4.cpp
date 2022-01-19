@@ -127,7 +127,7 @@ void Chapter_four::p_4p9_4p28()
 void Chapter_four::p_4p9_4p29()
 {
 	int a[10] = {};
-	int* p = a;
+	int *p = a;
 	cout << sizeof(a) << endl;
 	cout << sizeof(*a) << endl;
 	cout << sizeof(p) << endl;
@@ -150,7 +150,7 @@ void Chapter_four::p_4p10_4p31()
 		cout << *i << "\t";
 	}
 	cout << endl;
-	
+
 	// ºóÖÃ°æ±¾
 	vector<int> ivec2(10, 2);
 	vector<int>::size_type size2 = ivec2.size();
@@ -181,15 +181,15 @@ void Chapter_four::p_4p11p3_3p37()
 	int i = 0;
 	double d = 0.0;
 	string s = "";
-	const string* ps = &s;
+	const string *ps = &s;
 	char c = 'a';
-	char* pc = &c;
-	void* pv = &i;
+	char *pc = &c;
+	void *pv = &i;
 
-	pv = static_cast<void*>(const_cast<string*>(ps));
+	pv = static_cast<void *>(const_cast<string *>(ps));
 	i = static_cast<int>(*pc);
 	pv = &d;
-	pc = static_cast<char*>(pv);
+	pc = static_cast<char *>(pv);
 }
 
 void Chapter_four::runAll()

@@ -13,10 +13,10 @@ struct Chapter_five
 	void p_5p4p4_5p19();
 	void p_5p5p1_5p20();
 	void p_5p5p2_5p21();
-	int& p_5p6p3_5p23();
+	int &p_5p6p3_5p23();
 	void p_5p6p3_5p24();
 	void p_5p6p3_5p25();
-	
+
 	void runAll();
 };
 #endif

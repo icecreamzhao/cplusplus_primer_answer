@@ -28,7 +28,7 @@ struct Chapter_three
 	void p_3p4p1_3p23();
 	void p_3p4p2_3p24();
 	void p_3p4p2_3p25();
-	int* p_3p5p2_3p31();
+	int *p_3p5p2_3p31();
 	void p_3p5p2_3p32();
 	void p_3p5p3_3p35();
 	void p_3p5p3_3p36();

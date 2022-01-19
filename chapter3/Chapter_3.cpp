@@ -108,7 +108,7 @@ void Chapter_three::countPunct()
 void Chapter_three::myToUpperCase()
 {
 	string s = "hello, World";
-	for (auto& c : s)
+	for (auto &c : s)
 	{
 		c = toupper(c);
 	}
@@ -170,7 +170,7 @@ void Chapter_three::p_3p2p3_3p8()
 	decltype(s.size()) index = 0;
 	while (index != s.size())
 	{
-		auto& c = s[index];
+		auto &c = s[index];
 		++index;
 		c = 'x';
 	}
@@ -180,7 +180,7 @@ void Chapter_three::p_3p2p3_3p8()
 	s = "hello, world";
 	for (decltype(s.size()) index = 0; index != s.size(); ++index)
 	{
-		auto& c = s[index];
+		auto &c = s[index];
 		c = 'x';
 	}
 	cout << s << endl;
@@ -247,9 +247,9 @@ void Chapter_three::p_3p2p3_3p17()
 		strings.push_back(input);
 	}
 
-	for (auto& item : strings)
+	for (auto &item : strings)
 	{
-		for (auto& c : item)
+		for (auto &c : item)
 		{
 			c = toupper(c);
 		}
@@ -465,7 +465,7 @@ void Chapter_three::p_3p4p2_3p25()
 /*************************************
 * 定义一个数组, 令每个元素的值就是其下标 *
 *************************************/
-int* Chapter_three::p_3p5p2_3p31()
+int *Chapter_three::p_3p5p2_3p31()
 {
 	constexpr size_t array_size = 10;
 	int *iarray = new int[array_size];
@@ -484,7 +484,7 @@ int* Chapter_three::p_3p5p2_3p31()
 void Chapter_three::p_3p5p2_3p32()
 {
 	constexpr size_t array_size = 10;
-	int* p = p_3p5p2_3p31();
+	int *p = p_3p5p2_3p31();
 	int iarray[array_size];
 
 	for (int i = 0; i != array_size; ++i)
@@ -513,8 +513,8 @@ void Chapter_three::p_3p5p2_3p32()
 void Chapter_three::p_3p5p3_3p35()
 {
 	int ia[] = { 1,2,3,4,5 };
-	int* be = begin(ia);
-	int* en = end(ia);
+	int *be = begin(ia);
+	int *en = end(ia);
 	while (be != en)
 	{
 		*be = 0;
@@ -536,8 +536,8 @@ void Chapter_three::p_3p5p3_3p36()
 	int ia2[] = { 1,2,3,4,5 };
 	int ia3[] = { 2,3,4,5,6 };
 
-	int* pia = ia;
-	int* pia2 = ia3;
+	int *pia = ia;
+	int *pia2 = ia3;
 	while (pia != end(ia))
 	{
 		if (*pia == *pia2) {
@@ -590,7 +590,7 @@ void Chapter_three::p_3p5p4_3p39()
 	}
 
 	char ca1[] = "abc";
-	char ca2[] = { 'd' , 'e', 'f', '\0'};
+	char ca2[] = { 'd' , 'e', 'f', '\0' };
 	if (strcmp(ca1, ca2) == 0)
 	{
 		cout << "s1 equals s2" << endl;
@@ -627,7 +627,7 @@ void Chapter_three::p_3p5p4_3p40()
 void Chapter_three::cCodeTest()
 {
 	// 允许使用以空字符结尾的字符数组初始化字符串
-	char ca1[] = {'c', '+', '+', '\0'};
+	char ca1[] = { 'c', '+', '+', '\0' };
 	string s = ca1;
 	// 在string的加法运算中允许将字符数组作为其中的运算对象(但不能都是)
 	string s2 = s + " and " + ca1;
@@ -636,7 +636,7 @@ void Chapter_three::cCodeTest()
 	cout << s2 << endl;
 
 	// 使用c_str函数初始化字符数组
-	const char* cp = s2.c_str();
+	const char *cp = s2.c_str();
 	while (*cp)
 	{
 		cout << *cp;
@@ -665,7 +665,7 @@ void Chapter_three::p_3p5p5_3p42()
 {
 	vector<int> vec_int(10, 2);
 	int int_arr[10];
-	int* be = &int_arr[0];
+	int *be = &int_arr[0];
 	for (auto p = vec_int.cbegin(); p != vec_int.cend(); ++p)
 	{
 		*be = *p;
@@ -697,9 +697,9 @@ void Chapter_three::multiArray()
 			cout << j << endl;
 		}
 	}*/
-	for (auto& i : arr)
+	for (auto &i : arr)
 	{
-		for (auto& j : i)
+		for (auto &j : i)
 		{
 			cout << j << endl;
 		}
@@ -719,7 +719,7 @@ void Chapter_three::multiArrayAndPoint()
 
 	// 声明一个含有四个整型指针的数组
 	int itemp = 0;
-	int* pa[4] = {&itemp, &itemp, &itemp, &itemp };
+	int *pa[4] = { &itemp, &itemp, &itemp, &itemp };
 	cout << *(pa[0]) << endl;
 
 	// 使用指针循环数组
@@ -753,7 +753,7 @@ void Chapter_three::p_3p5p6_3p43()
 	int ia[one_size][two_size] = {};
 	// 使用范围for来遍历数组
 	for (int(&i)[two_size] : ia)
-		for (int& j : i)
+		for (int &j : i)
 			cout << j << "\t";
 
 	cout << endl;
@@ -768,7 +768,7 @@ void Chapter_three::p_3p5p6_3p43()
 	cout << endl;
 
 	// 使用普通for和指针
-	for (int (*i)[two_size] = ia; i != end(ia); ++i)
+	for (int(*i)[two_size] = ia; i != end(ia); ++i)
 		for (int *j = *i; j != end(*i); ++j)
 			cout << *j << "\t";
 	cout << endl;

@@ -22,8 +22,12 @@ int main()
 	four.runAll();*/
 
 	// 第五章
-	Chapter_five five = Chapter_five();
-	five.runAll();
-	
+	/*Chapter_five five = Chapter_five();
+	five.runAll();*/
+
+	// 第六章
+	Chapter_six six = Chapter_six();
+	six.runAll();
+
 	return 0;
 }

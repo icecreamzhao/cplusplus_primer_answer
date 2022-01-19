@@ -37,8 +37,8 @@ void Chapter_two::p_2p1p3_2p8()
 *****************************************/
 void Chapter_two::p_2p3p1_2p16()
 {
-	int i = 0, & r1 = i;
-	double d = 3.14, & r2 = d;
+	int i = 0, &r1 = i;
+	double d = 3.14, &r2 = d;
 
 	r2 = 3.15;
 	r2 = r1;
@@ -51,7 +51,7 @@ void Chapter_two::p_2p3p1_2p16()
 *****************************************/
 void Chapter_two::p_2p3p2_2p18()
 {
-	int val = 1, * p = &val;
+	int val = 1, *p = &val;
 	int val2 = 2;
 	cout << "val is " << val << ", val2 is " << val2 << ", p(pointer) is " << *p << endl;
 	// change point
@@ -68,9 +68,9 @@ void Chapter_two::p_2p3p2_2p18()
 void Chapter_two::constReference()
 {
 	const int i = 42;
-	const int& cri = i;
+	const int &cri = i;
 	int j = 42;
-	const int& crj = j;
+	const int &crj = j;
 	cout << crj << endl;
 	j = 43;
 	cout << crj << endl;
@@ -82,13 +82,13 @@ void Chapter_two::constReference()
 void Chapter_two::constPointer()
 {
 	int i = 3;
-	int* const pi = &i;
+	int *const pi = &i;
 	*pi = 4; // right
 	//pi = j; // error, pi is const
 	const double dpi = 3.14;
 	//double* const pdpi = &dpi; //error, type is const double, not double
-	const double* const pdpi = &dpi; // right
-	double* pd = nullptr;
+	const double *const pdpi = &dpi; // right
+	double *pd = nullptr;
 }
 
 /***************************************
@@ -102,7 +102,7 @@ void Chapter_two::calculateSalesData()
 	data1.revenue = data1.price * data1.item;
 	cin >> data2.isbn >> data2.price >> data2.item;
 	data2.revenue = data2.price * data2.item;
-	
+
 	if (data1.isbn == data2.isbn)
 	{
 		unsigned int totalCnt = data1.item + data2.item;

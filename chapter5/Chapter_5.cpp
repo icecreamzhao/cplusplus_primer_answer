@@ -19,7 +19,7 @@ using std::runtime_error;
  ****************************************/
 void Chapter_five::p_5p3p1_5p5()
 {
-	const char score[] = {'F', 'D', 'C', 'B', 'A'};
+	const char score[] = { 'F', 'D', 'C', 'B', 'A' };
 	int scoreInput = 0;
 	string result;
 	while (cin >> scoreInput)
@@ -87,7 +87,7 @@ void Chapter_five::p_5p3p2_5p9()
 			<< "number of vowel u: \t" << uCnt << '\n';
 		aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0;
 	}
-} 
+}
 
 /************************
  * 统计空格, 制表符的数量 *
@@ -189,9 +189,9 @@ void Chapter_five::p_5p4p2_5p16()
  *************************************************/
 void Chapter_five::p_5p4p2_5p17()
 {
-	vector<int> v1 = {1,2,3,4,5,6,7,8,9,10};
-	vector<int> v2 = {1,2,3,4};
-	vector<int> v3 = {5,6,7,8,9,10};
+	vector<int> v1 = { 1,2,3,4,5,6,7,8,9,10 };
+	vector<int> v2 = { 1,2,3,4 };
+	vector<int> v3 = { 5,6,7,8,9,10 };
 
 	// v2size type is size_t
 	for (decltype(v2.size()) v2Size = 0; v2Size != v2.size(); ++v2Size)
@@ -269,16 +269,22 @@ void Chapter_five::p_5p5p2_5p21()
 		cout << "no equal string." << endl;
 }
 
-int& Chapter_five::p_5p6p3_5p23()
+/******************************************************
+ * 从标准输入中读取两个整数, 输出第一个数除以第二个数的结果 *
+ *****************************************************/
+int &Chapter_five::p_5p6p3_5p23()
 {
 	int i, j;
 	cin >> i >> j;
 	int result = i / j;
-	int& resultR = result;
+	int &resultR = result;
 	cout << result << endl;
 	return resultR;
 }
 
+/*************************
+ * 当第二个数为0时抛出异常 *
+ ************************/
 void Chapter_five::p_5p6p3_5p24()
 {
 	int i, j;
@@ -286,22 +292,25 @@ void Chapter_five::p_5p6p3_5p24()
 	if (j == 0)
 		throw runtime_error("second data must not equal zero!");
 	int result = i / j;
-	int& resultR = result;
+	int &resultR = result;
 	cout << result << endl;
 }
 
+/***************************
+ * 使用try catch 去捕获异常 *
+ **************************/
 void Chapter_five::p_5p6p3_5p25()
 {
-	again:
-		try
-		{
-			int i, j;
-			cin >> i >> j;
-			if (j == 0)
-				throw runtime_error("second data must not equal zero!");
-			int result = i / j;
-			int& resultR = result;
-		}
+again:
+	try
+	{
+		int i, j;
+		cin >> i >> j;
+		if (j == 0)
+			throw runtime_error("second data must not equal zero!");
+		int result = i / j;
+		int &resultR = result;
+	}
 	catch (runtime_error err)
 	{
 		cout << err.what() << endl;
@@ -330,5 +339,5 @@ void Chapter_five::runAll()
 	//p_5p5p2_5p21();
 	//p_5p6p3_5p23();
 	//p_5p6p3_5p24();
-	p_5p6p3_5p25();
+	//p_5p6p3_5p25();
 }
