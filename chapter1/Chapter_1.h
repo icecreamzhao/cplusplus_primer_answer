@@ -1,5 +1,5 @@
-#ifndef CHAPTER_ONE
-#define CHAPTER_ONE
+#ifndef __CHAPTER_ONE__
+#define __CHAPTER_ONE__
 
 #include <iostream>
 

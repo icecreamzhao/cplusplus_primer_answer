@@ -1,5 +1,5 @@
-#ifndef CHAPTER_SIX
-#define CHAPTER_SIX
+#ifndef __CHAPTER_SIX__
+#define __CHAPTER_SIX__
 
 #include <string>
 #include <vector>

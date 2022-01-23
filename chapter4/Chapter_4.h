@@ -1,5 +1,5 @@
-#ifndef CHAPTER_FOUR
-#define CHAPTER_FOUR
+#ifndef __CHAPTER_FOUR__
+#define __CHAPTER_FOUR__
 
 struct Chapter_four {
 

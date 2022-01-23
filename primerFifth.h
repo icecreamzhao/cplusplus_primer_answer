@@ -9,5 +9,6 @@
 #include "chapter4/Chapter_4.h"
 #include "chapter5/Chapter_5.h"
 #include "chapter6/Chapter_6.h"
+#include "chapter7/Chapter_7.h"
 
 // TODO: 在此处引用程序需要的其他标头。
