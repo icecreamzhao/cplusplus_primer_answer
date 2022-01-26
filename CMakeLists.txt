@@ -29,6 +29,16 @@ primerFifth
  "chapter7/Chapter_7.cpp"
  "chapter7/Person.h"
  "chapter7/Screen.h"
- "chapter7/Screen.cpp" "chapter7/Class_X.h"  "chapter7/Window_mgr.cpp" "chapter7/Window_mgr.h" "chapter7/No_default.h" "chapter7/No_default.cpp" "chapter7/Person.cpp" "chapter7/Debug.h")
+ "chapter7/Screen.cpp"
+ "chapter7/Class_X.h"
+ "chapter7/Window_mgr.cpp"
+ "chapter7/Window_mgr.h"
+ "chapter7/No_default.h"
+ "chapter7/No_default.cpp"
+ "chapter7/Person.cpp"
+ "chapter7/Debug.h"
+ "chapter8/Chapter_8.h"
+ "chapter8/Chaper_8.cpp"
+ "chapter8/Person.h")
 
 # TODO: 如有需要，请添加测试并安装目标。
