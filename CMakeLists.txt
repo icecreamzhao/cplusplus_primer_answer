@@ -37,8 +37,10 @@ primerFifth
  "chapter7/No_default.cpp"
  "chapter7/Person.cpp"
  "chapter7/Debug.h"
- "chapter8/Chapter_8.h"
+ "chapter9/Chapter_9.h"
  "chapter8/Chaper_8.cpp"
- "chapter8/Person.h")
+ "chapter8/Person.h"
+ "chapter9/Chapter_9.cpp"
+ "chapter9/Chapter_9.h")
 
 # TODO: 如有需要，请添加测试并安装目标。
