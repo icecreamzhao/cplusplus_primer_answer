@@ -1,18 +1,10 @@
-﻿# CMakeList.txt: primerFifth 的 CMake 项目，在此处包括源代码并定义
-# 项目特定的逻辑。
-#
-cmake_minimum_required (VERSION 3.8)
+﻿cmake_minimum_required (VERSION 3.8)
 
-project ("primerFifth")
+set(PROJECT_NAME CXX_PRIMER_ANSWER)
+project(${PROJECT_NAME})
 
-# 将源代码添加到此项目的可执行文件。
 add_executable (
 primerFifth 
- "primerFifth.cpp" 
- "primerFifth.h" 
- "chapter1/chapter_1.h" 
- "chapter1/Chapter_1.cpp" 
- "chapter1/sales_item.h" 
  "chapter2/Chapter_2.h" 
  "chapter2/Chapter_2.cpp" 
  "chapter2/Sales_data.h" 
@@ -41,6 +33,17 @@ primerFifth
  "chapter8/Chaper_8.cpp"
  "chapter8/Person.h"
  "chapter9/Chapter_9.cpp"
- "chapter9/Chapter_9.h")
+ "chapter9/Chapter_9.h" 
+ "chapter10/chapter_10.cpp" 
+ "chapter10/chapter_10.h" "chapter_1.cpp")
 
-# TODO: 如有需要，请添加测试并安装目标。
+include_directories("include")
+
+# chapter1 的练习
+add_subdirectory(chapter1)
+add_executable(chapter_1 chapter_1.cpp)
+target_link_libraries(chapter_1 PUBLIC ex1_9)
+target_link_libraries(chapter_1 PUBLIC ex1_10)
+target_link_libraries(chapter_1 PUBLIC ex1_11)
+target_link_libraries(chapter_1 PUBLIC ex1_13)
+target_link_libraries(chapter_1 PUBLIC ex1_16)
