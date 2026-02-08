@@ -1,0 +1,31 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "windows-clang-cl",
+      "displayName": "Windows + clang-cl + Ninja",
+      "generator": "Ninja",
+      "binaryDir": "build/windows",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang-cl",
+        "CMAKE_CXX_COMPILER": "clang-cl"
+      }
+    },
+    {
+      "name": "linux-clang",
+      "displayName": "Linux + clang++ + Ninja",
+      "generator": "Ninja",
+      "binaryDir": "build/linux",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++"
+      }
+    },
+    {
+      "name": "macos-clang",
+      "displayName": "macOS + AppleClang",
+      "generator": "Ninja",
+      "binaryDir": "build/macos"
+    }
+  ]
+}
