@@ -1,16 +1,21 @@
+// ============================================================
+// @file    ex_1_06.cpp
+// @brief   C++ Primer - 第一章 练习六
+//
+// @details
 // 解释下列程序是否合法
-/**
- * std::cout << "The sum of " << v1;
- * << " and " << v2;
- * << " is " << v1 + v2 << std::endl;
- */
+// std::cout << "The sum of " << v1;
+// << " and " << v2;
+// << " is " << v1 + v2 << std::endl;
+//
+// ============================================================
 
 #include <iostream>
 #ifdef _WIN32
 #include <Windows.h> // 或用 <cstdlib> 配合 system("chcp 65001")
 #endif
 
-#define FIRST_CHINESE "解释下列程序是否合法\n"
+#define FIRST_CHINESE "please explain to us if this code is right\n"
 #define FIRST_CODE "std::cout << \"The sum of \" << v1;\n"
 #define SECOND_CODE "<< \" and \" << v2;\n"
 #define THIRD_CODE "<< \" is \" << v1 + v2 << std::endl;\n"
