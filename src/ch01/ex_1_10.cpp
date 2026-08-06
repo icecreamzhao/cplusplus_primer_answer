@@ -11,8 +11,8 @@
 
 int main()
 {
-    int i = 11;
-    while (i != 0) std::cout << --i << "\t";
+    for (int i = 10; i >= 0; --i)
+        std::cout << i << "\t";
     std::cout << std::endl;
     return 0;
 }

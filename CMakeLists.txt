@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.23)
 # project() 会：
 # - 设置 PROJECT_NAME / PROJECT_VERSION 等变量
 # - 启用对应语言的编译器检测
-project(minimal_industrial_framework
+project(cpp_primer_answer
     VERSION 0.1.0
     LANGUAGES C CXX
 )

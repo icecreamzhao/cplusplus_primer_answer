@@ -11,25 +11,18 @@
 // ============================================================
 
 #include <iostream>
-#ifdef _WIN32
-#include <Windows.h> // 或用 <cstdlib> 配合 system("chcp 65001")
-#endif
-
-#define FIRST_CHINESE "please explain to us if this code is right\n"
-#define FIRST_CODE "std::cout << \"The sum of \" << v1;\n"
-#define SECOND_CODE "<< \" and \" << v2;\n"
-#define THIRD_CODE "<< \" is \" << v1 + v2 << std::endl;\n"
 
 int main()
 {
-    #ifdef _WIN32
-    SetConsoleOutputCP(CP_UTF8); // 设置控制台输出编码为 UTF-8
-    // 或者使用 system("chcp 65001"); // 这种方法会在控制台显示一条提示信息
-    #endif
-    std::cout << FIRST_CHINESE;
-    std::cout << FIRST_CODE;
-    std::cout << SECOND_CODE;
-    std::cout << THIRD_CODE;
+    constexpr auto first_line  = "please explain to us if this code is right\n";
+    constexpr auto second_line = "std::cout << \"The sum of \" << v1;\n";
+    constexpr auto third_line  = "<< \" and \" << v2;\n";
+    constexpr auto fourth_line = "<< \" is \" << v1 + v2 << std::endl;\n";
+
+    std::cout << first_line;
+    std::cout << second_line;
+    std::cout << third_line;
+    std::cout << fourth_line;
 
     std::cout << "不合法，首先没有声明v1和v2变量, 其次第二行没有先写std::cout却直接写了 << 运算符， 第三行也是同样的道理" << std::endl;
     return 0;

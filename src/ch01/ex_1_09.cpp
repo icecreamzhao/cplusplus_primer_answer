@@ -9,12 +9,12 @@
 
 #include <iostream>
 
-#define MAX_WHILE 100
-
 int main()
 {
-    int i = 50, sum = 50;
-    while (i != MAX_WHILE) sum += ++i;
-    std::cout << "the sum of 50 and 100 is " << sum << std::endl;
+    constexpr int min = 50;
+    constexpr int max = 100;
+    int sum = 0, i = min;
+    while (i != max) sum += ++i;
+    std::cout << "the sum of 50 to 100 is " << sum << std::endl;
     return 0;
 }

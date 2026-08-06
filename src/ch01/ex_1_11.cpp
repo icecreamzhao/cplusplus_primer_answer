@@ -12,19 +12,19 @@
 int main()
 {
     std::cout << "please enter two numbers：";
-    int f_v, s_v, i_temp = 0;
-    std::cin >> f_v >> s_v;
-    if (s_v > f_v)
+    int first, second, temp = 0;
+    std::cin >> first >> second;
+    if (second > first)
     {
-        i_temp = f_v - 1;
-        while (i_temp != s_v) std::cout << ++i_temp << "\t";
-    } else if (f_v > s_v)
+        temp = first - 1;
+        while (temp != second) std::cout << ++temp << "\t";
+    } else if (first > second)
     {
-       i_temp = s_v - 1; 
-       while (i_temp != f_v) std::cout << ++i_temp << "\t";
+       temp = second - 1; 
+       while (temp != first) std::cout << ++temp << "\t";
     } else
     {
-        std::cout << f_v;
+        std::cout << first;
     }
     std::cout << std::endl;
     return 0;

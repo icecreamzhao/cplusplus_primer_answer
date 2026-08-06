@@ -8,9 +8,4 @@ foreach(src ${CH01_SOURCES})
     get_filename_component(exe_name ${src} NAME_WE)
 
     add_executable(${CHAPTER}_${exe_name} ${src})
-
-    target_include_directories(${CHAPTER}_${exe_name}
-        PRIVATE
-            ${PROJECT_SOURCE_DIR}/include
-    )
 endforeach()
